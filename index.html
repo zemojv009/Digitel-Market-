@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Investment Site</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background: #111;
+            color: white;
+            margin-top: 100px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+        }
+        button {
+            background: gold;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h1>💰 Investment Website</h1>
+
+<input type="number" id="amount" placeholder="Enter Amount">
+<br>
+<button onclick="invest()">Invest</button>
+
+<h2 id="result"></h2>
+
+<script>
+function invest(){
+    let amount = document.getElementById("amount").value;
+
+    let profit = amount * 0.1;
+    let total = Number(amount) + profit;
+
+    document.getElementById("result").innerText =
+        "Profit: " + profit + " | Total: " + total;
+}
+</script>
+
+</body>
+</html>
