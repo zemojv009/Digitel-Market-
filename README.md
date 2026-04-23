@@ -148,3 +148,34 @@ function updateBalance(){
 
 </body>
 </html>
+.center {
+  text-align: center;
+  margin-top: 80px;
+}
+
+input, button, select {
+  padding: 10px;
+  margin: 10px;
+  width: 220px;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  background: gold;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.hidden { display: none; }
+
+.dashboard {
+  padding: 20px;
+}
+
+.card {
+  background: rgba(255,255,255,0.1);
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+}
